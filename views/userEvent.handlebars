@@ -1,0 +1,19 @@
+<!-- If the user is logged in, render the painting content -->
+{{!-- {{#if loggedIn}} --}}
+{{!-- <section class="around-event"> --}}
+<section class="event ">
+<h3>{{event.event_name}}</h3>
+  <img src="{{event.image}}" alt="image of event">
+  <div class="event-details">
+    <p>Start date: {{event.starting_date}}</p>
+    <p>Genre: {{ event.genre}}</p>
+    <p>Location: {{ event.location}}</p>
+    <a href="{{event.URL}}">Click here for more information</a>
+
+  </div>
+</section>
+{{!-- </section> --}}
+<!-- Otherwise, provide a link to login -->
+{{!-- {{else}} --}}
+{{!-- <a href="/login">You must login first to view this painting</a> --}}
+{{!-- {{/if}} --}}

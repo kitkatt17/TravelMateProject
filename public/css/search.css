@@ -1,0 +1,12 @@
+h2 {
+    position: absolute;
+    top: 375px;
+    left: 300px;
+    font-weight: bold;
+}
+
+form {
+    position: absolute;
+    top: 400px;
+    left: 300px;
+}

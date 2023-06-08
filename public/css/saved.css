@@ -1,0 +1,43 @@
+.saved-each-city,
+.saved-each-event,
+.arount-event {
+    display: flex;
+    justify-content: center;
+}
+
+.saved-each-city a,
+.saved-each-event a,
+.event {
+    width: 30%;
+    /* height: 600px; */
+    margin: 20px;
+    background-color: gray;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+}
+
+.saved-each-city-name,
+.saved-event-name,
+.event h2 {
+    font-size: 300%;
+
+}
+
+
+.saved-each-city img,
+.saved-each-event img,
+.event img {
+    object-fit: cover;
+    height: 400px;
+    border-radius: 0 0 5px 5px;
+}
+
+.saved-cities,
+.saved-events,
+.arount-event {
+    position: absolute;
+    top: 200px;
+}

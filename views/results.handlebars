@@ -1,0 +1,22 @@
+{{#each resultData as |event|}}
+<section class="events">
+    <img src="{{event.images.0.url}}" alt="Photo of {{event.name}}." class="event-image">
+    <div class="event-details">
+        <h3 class="event-title">{{event.name}}</h3>
+        <p>Date: {{ event.dates.start.localDate}}</p>
+        <p>Description: {{ event.classifications.0.genre.name}}</p>
+        <p>Venue: {{ event._embedded.venues.0.name}}</p>
+        <p>City: {{ event._embedded.venues.0.city.name}},
+            {{event._embedded.venues.0.state.stateCode}}</p>
+        <a href="{{event.url}}">Click here for more information!</a>
+        <button class="saveBtn" data-image="{{event.images.0.url}}" data-city="{{event._embedded.venues.0.city.name}}"
+            data-eventName="{{event.name}}" data-startDate="{{event.dates.start.localDate}}"
+            data-genre="{{ event.classification.genre.name}}" data-venue="{{ event._embedded.venues.0.name}}"
+            data-URL="{{event.url}}">Save</button>
+
+    </div>
+</section>
+{{/each}}
+
+
+<script src="/js/saveCity.js"></script>

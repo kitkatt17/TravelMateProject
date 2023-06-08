@@ -1,0 +1,17 @@
+{{!-- {{#if loggedIn}} --}}
+<section class="saved-events">
+  {{!-- <h3 class="username">{{user.username}}'s Trips</h3> --}}
+  <h2 class="city-name">Events in {{city.name}}</h2>
+
+  <section class="saved-each-event">
+    {{#each city.events as |event|}}
+    <a href='/saved/event/{{event.id}}'>
+      <h2 class="saved-event-name">{{event.event_name}}</h2>
+      <img src="{{event.image}}" />
+    </a>
+    {{/each}}
+  </section>
+</section>
+{{!-- {{else}}
+<a href="/login">You must login first to view the paintings</a>
+{{/if}} --}}
